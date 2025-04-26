@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADC Eventos | Catering y Organización de Eventos</title>
+
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #e0f2f1;
+    }
+
+    .hero-image {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .benefits, .testimonials, .special-offer, .contact-form, .contact-data {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .benefits ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .benefits li {
+      margin-bottom: 10px;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .special-offer p {
+      background-color: #ffcc80;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .contact-form form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input, .contact-form select, .contact-form textarea, .contact-form button {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #004d40;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contact-form button:hover {
+      background-color: #00796b;
+    }
+
+    .contact-data p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #80cbc4;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <img src="https://via.placeholder.com/150x50?text=LOGO" alt="ADC Eventos Logo" class="logo">
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="hero">
+    <h1>¡Haz de tu evento un recuerdo inolvidable!</h1>
+    <p>Menús personalizados, ingredientes frescos y atención de primer nivel para tu ocasión especial.</p>
+    <img src="https://via.placeholder.com/600x400?text=Foto+Evento" alt="Evento exitoso" class="hero-image">
+  </section>
+
+  <!-- Beneficios -->
+  <section id="servicios" class="benefits">
+    <h2>¿Qué te ofrecemos?</h2>
+    <ul>
+      <li>Menús gourmet y tradicionales ecuatorianos.</li>
+      <li>Opciones dietéticas especiales (vegano, sin gluten).</li>
+      <li>Servicio completo: alimentación, montaje y personal de atención.</li>
+      <li>Ingredientes frescos de proveedores locales.</li>
+      <li>Experiencia certificada en bodas y eventos privados.</li>
+    </ul>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Clientes felices</h2>
+    <blockquote>
+      "La mejor decisión que tomamos para nuestra boda. El servicio y la comida fueron excepcionales." 
+      <cite>- Andrea Paredes, Quito</cite>
+    </blockquote>
+    <blockquote>
+      "Cumplieron con todo lo prometido y más. Invitados felices, evento exitoso."
+      <cite>- Luis Cevallos, Quito</cite>
+    </blockquote>
+  </section>
+
+  <!-- Oferta especial -->
+  <section class="special-offer">
+    <h2>Oferta Especial</h2>
+    <p>Solicita tu cotización y recibe una <strong>degustación gratuita</strong>.</p>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section id="contacto" class="contact-form">
+    <h2>Agendar Degustación o Cotización</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <select name="tipo_evento" required>
+        <option value="">Tipo de evento</option>
+        <option value="boda">Boda</option>
+        <option value="cumpleaños">Cumpleaños</option>
+        <option value="empresarial">Empresarial</option>
+        <option value="otro">Otro</option>
+      </select>
+      <input type="number" name="invitados" placeholder="Número de invitados" required>
+      <input type="date" name="fecha_evento" placeholder="Fecha estimada" required>
+      <textarea name="mensaje" placeholder="Mensaje adicional"></textarea>
+      <button type="submit">Solicitar Cotización</button>
+    </form>
+  </section>
+
+  <!-- Datos de contacto -->
+  <section class="contact-data">
+    <p>¿Tienes preguntas? Contáctanos directamente:</p>
+    <p><strong>WhatsApp:</strong> +593 99 123 4567</p>
+    <p><strong>Teléfono:</strong> (02) 234-5678</p>
+    <p><strong>Instagram:</strong> @adc_eventos</p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 ADC Eventos. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+    <p>Quito, Ecuador</p>
+  </footer>
+
+</body>
+</html>
 
